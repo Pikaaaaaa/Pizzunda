@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizzunda</title>
+    <link rel="stylesheet" href="assets/site/plugins/owl/css/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/site/plugins/owl/css/owl.carousel.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/site/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/site/plugins/animate/animate.css">
+    <link rel="stylesheet" href="assets/site/layout/css/style.css">
+    <!--jquery-->
+    <script src="assets/site/plugins/jquery/jquery-3.2.1.slim.min.js"></script>
+</head>
+<body>
+    <!--Modal-->
+    <div class="modal fade" id="auth-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                      <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                            </button>
+                      </div>
+                      <div class="modal-body">
+                      </div>
+                      <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                </div>
+          </div>
+    </div>
+    <div class="wrapper">
+<!--background-->
+        <div class="background" style="background-image: url(files/images/page-bg.png)">
+        </div>
+<!--side menu-->
+<!--header-->
+        <header class="page-header container">
+           <div class="row align-items-center">
+               <div class="col-5 d-flex">
+                    <nav class="header-nav">
+                        <a href="#">
+                            <i id="toggle-side-menu" class="fas fa-bars"></i>
+                        </a>
+                        <a href="#">
+                            <i id="close-side-menu" class="fas fa-times"></i>
+                        </a>
+                    </nav>
+                    <div id="side-menu">
+                        <ul>
+                            <li><a href="about.html">ჩვენ შესახებ</a></li>
+                            <li><a href="#">წესები და პირობები</a></li>
+                            <li><a href="#">კონტაქტი</a></li>
+                        </ul>
+                    </div>
+                    <div id="contact">
+                        <img src="files/images/clock-icon.png" alt="clock">
+                        11:30-24:00
+                        <img src="files/images/phone-icon.png" alt="phone">
+                        032 2 60 78
+                    </div>
+                </div>
+                <div class="col-2 text-center">
+                    <h1 class="logo">
+                        <a href="index.html" class="d-inline-block">
+                            <img src="files/images/pizzundaLogo.png" alt="pizzunda">
+                            <span class="d-none">pizzunda</span>
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-5 text-right">
+                    <a href="#" class="authorization" data-toggle="modal" data-target="#auth-modal">
+                        შესვლა
+                        <img src="files/images/user-icon.png" alt="user">
+                    </a>
+                </div>
+            </div>
+        </header>
+<!--content-->
+        <main class="page-content">
+            <div class="container">
+                <div class="order-pizza">
+                    <div class="row align-items-center">
+                        <div class="col-3">
+                            <ul class="social">
+                                <li>
+                                   <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                <li>
+                                   <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>                            
+                            </ul>
+                            <h2 class="order-title">
+                                <span class="red-bg d-inline-block">შეუკვეთე</span>
+                                <div class="clear"></div>
+                                <span class="red-bg d-inline-block">პიცა</span>
+                                <div class="clear"></div>
+                                <span class="red-bg d-inline-block">ნაჭრებად</span>
+                            </h2>
+                            <div class="btn-group pizza-drink">
+                                <button type="button" class="btn btn-danger">პიცა</button>
+                                <button type="button" class="btn btn--transparent">სასმელი</button>
+                            </div>
+                        </div>
+                        <div class="col-6 text-center">
+                           <div class="district-selector dropdown text-left">
+                                <button style="background-image:url(files/images/dropdown-i.png)" class="btn btn-secondary dropdown-toggle btn--transparent" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    აირჩიეთ უბანი
+                                </button>
+                                <div class="district-selector-menu dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">უბანი</a>
+                                    <a class="dropdown-item" href="#">უბანი</a>
+                                    <a class="dropdown-item" href="#">უბანი</a>
+                                </div>
+                            </div>
+                            <div class="slices">
+                                <img src="files/images/pizzaSlices.png" alt="pizza">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="booking-form">
+                                <div class="order">
+                                    <div class="form-top d-flex align-items-center">
+                                        <div class="form-top-inner clearfix">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <h3>თქვენი შეკვეთა</h3>
+                                        </div>
+                                    </div>
+                                    <ul class="order-list">
+                                        <li class="clearfix">
+                                            <p class="product float-left">1X პეპერონი</p>
+                                            <p class="product-price float-right">2.00₾</p>
+                                        </li>
+                                        <li class="clearfix">
+                                            <p class="product float-left">1X პეპერონი</p>
+                                            <p class="product-price float-right">2.00₾</p>
+                                        </li>
+                                        <li class="clearfix">
+                                            <p class="product float-left">მიტანის ფასი</p>
+                                            <p class="product-price float-right">5.00₾</p>
+                                        </li>
+                                    </ul>
+                                    <div class="form-bottom">
+                                        <div class="form-bottom-inner clearfix">
+                                            <p class="total-price float-left">ჯამური ფასი:</p>
+                                            <p class="price float-right">15.25₾</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn--green">შეკვეთა</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme product-list-carousel">
+                     <div class="item pizza-type text-center">
+                        <div href="#" class="product">
+                            <div class="add-product" style="background-image:url(files/images/sliderAddProduct.png)">
+                                <a href="#"></a>
+                            </div>
+                            <figure class="product-img">
+                                <img src="files/images/carousel-pizza.png" alt="add">
+                            </figure>
+                            <h2 class="product-title">პეპერონი</h2>
+                            <p class="product-desc">პეპერონე, შავი ზეთისხილი,სოკო</p>
+                        </div>
+                    </div>
+                    <div class="item pizza-type text-center">
+                        <div href="#" class="product">
+                            <div class="add-product" style="background-image:url(files/images/sliderAddProduct.png)">
+                                <a href="#"></a>
+                            </div>
+                            <figure class="product-img">
+                                <img src="files/images/carousel-pizza.png" alt="add">
+                            </figure>
+                            <h2 class="product-title">პეპერონი</h2>
+                            <p class="product-desc">პეპერონე, შავი ზეთისხილი,სოკო</p>
+                        </div>
+                    </div>
+                    <div class="item pizza-type text-center">
+                        <div href="#" class="product">
+                            <div class="add-product" style="background-image:url(files/images/sliderAddProduct.png)">
+                                <a href="#"></a>
+                            </div>
+                            <figure class="product-img">
+                                <img src="files/images/carousel-pizza.png" alt="add">
+                            </figure>
+                            <h2 class="product-title">პეპერონი</h2>
+                            <p class="product-desc">პეპერონე, შავი ზეთისხილი,სოკო</p>
+                        </div>
+                    </div>
+                    <div class="item pizza-type text-center">
+                        <div href="#" class="product">
+                            <div class="add-product" style="background-image:url(files/images/sliderAddProduct.png)">
+                                <a href="#"></a>
+                            </div>
+                            <figure class="product-img">
+                                <img src="files/images/carousel-pizza.png" alt="add">
+                            </figure>
+                            <h2 class="product-title">პეპერონი</h2>
+                            <p class="product-desc">პეპერონე, შავი ზეთისხილი,სოკო</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+<!--footer-->
+        <footer class="page-footer"></footer>
+    </div>
+<!-- plugins -->
+<script src="assets/site/plugins/popper/popper.min.js"></script>
+<script src="assets/site/plugins/bootstrap/js/bootstrap.min.js">
+</script>
+<script src="assets/site/plugins/owl/js/owl.carousel.min.js"></script>
+<!--scripts-->
+<script src="assets/site/layout/js/sidemenu.js"></script>
+<script src="assets/site/layout/js/owl.js"></script>
+</body>
+</html>
